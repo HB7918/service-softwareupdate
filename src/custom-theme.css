@@ -1,0 +1,57 @@
+/* Override CloudScape primary button colors to orange with black text */
+
+/* CSS Variables approach */
+:root {
+  --awsui-color-background-button-primary-default: #ff9900 !important;
+  --awsui-color-background-button-primary-hover: #ec7211 !important;
+  --awsui-color-background-button-primary-active: #dd6b10 !important;
+  --awsui-color-text-button-primary-default: #000000 !important;
+  --awsui-color-text-button-primary-hover: #000000 !important;
+  --awsui-color-text-button-primary-active: #000000 !important;
+  --awsui-color-border-button-primary-default: #ff9900 !important;
+  --awsui-color-border-button-primary-hover: #ec7211 !important;
+  --awsui-color-border-button-primary-active: #dd6b10 !important;
+}
+
+/* Class-based selectors */
+button[class*="awsui_button"][class*="awsui_variant-primary"],
+.awsui-button-variant-primary,
+button.awsui-button-variant-primary {
+  background-color: #ff9900 !important;
+  border-color: #ff9900 !important;
+  color: #000000 !important;
+}
+
+button[class*="awsui_button"][class*="awsui_variant-primary"]:hover,
+.awsui-button-variant-primary:hover,
+button.awsui-button-variant-primary:hover {
+  background-color: #ec7211 !important;
+  border-color: #ec7211 !important;
+  color: #000000 !important;
+}
+
+button[class*="awsui_button"][class*="awsui_variant-primary"]:active,
+button[class*="awsui_button"][class*="awsui_variant-primary"]:focus,
+.awsui-button-variant-primary:active,
+.awsui-button-variant-primary:focus,
+button.awsui-button-variant-primary:active,
+button.awsui-button-variant-primary:focus {
+  background-color: #dd6b10 !important;
+  border-color: #dd6b10 !important;
+  color: #000000 !important;
+}
+
+button[class*="awsui_button"][class*="awsui_variant-primary"]:disabled,
+.awsui-button-variant-primary:disabled,
+button.awsui-button-variant-primary:disabled {
+  background-color: #ffd4a8 !important;
+  border-color: #ffd4a8 !important;
+  color: #666666 !important;
+  opacity: 0.5 !important;
+}
+
+/* Additional selectors for nested button content */
+button[class*="awsui_button"][class*="awsui_variant-primary"] span,
+button[class*="awsui_button"][class*="awsui_variant-primary"] .awsui-button-content {
+  color: #000000 !important;
+}
