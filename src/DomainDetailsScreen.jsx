@@ -279,7 +279,7 @@ function GeneralInformationContainer({ onOpenUpdateModal, updateScheduled, sched
                       }
                       triggerType="text"
                     >
-                      <StatusIndicator type="error">Pre check failed</StatusIndicator>
+                      <StatusIndicator type="error">Last update failed</StatusIndicator>
                     </Popover>
                     <Link variant="primary" onFollow={(e) => { e.preventDefault(); onOpenUpdateModal(); }}>Update available</Link>
                   </SpaceBetween>
